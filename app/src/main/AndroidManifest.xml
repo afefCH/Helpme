@@ -13,10 +13,13 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+<<<<<<< Updated upstream
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+=======
+>>>>>>> Stashed changes
 
     <application
         android:allowBackup="true"
@@ -44,6 +47,12 @@
         <activity
             android:name=".page7_connexion"
             android:label="@string/title_activity_page7_connexion" />
+<<<<<<< Updated upstream
+=======
+        <activity android:name=".ContactServiceUrgence">
+        </activity>
+        <activity android:name=".UrgenceActivity"></activity>
+>>>>>>> Stashed changes
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -63,9 +72,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+<<<<<<< Updated upstream
         <activity android:name=".Activity_vid"></activity>
         <activity android:name=".Activity_blessure" />
         <activity android:name=".Activity_chaleur"></activity>
+=======
+
+>>>>>>> Stashed changes
     </application>
 
 </manifest>

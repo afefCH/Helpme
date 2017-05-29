@@ -17,6 +17,7 @@
         <item>AB</item>
 
     </string-array>
+    <string name="contact">contacter service urgence</string>
     <string name="title_activity_page7_connexion">Sign in</string>
 
     <!-- Strings related to login -->
