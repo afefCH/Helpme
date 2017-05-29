@@ -8,7 +8,8 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_height="192dp"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:background="@drawable/logo">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -27,8 +28,8 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
-        android:background="@drawable/backg">
+        android:background="@drawable/backg"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
 
         <RelativeLayout
             android:id="@+id/activity_page__inscri4"
@@ -41,74 +42,75 @@
             tools:context="com.example.latitude.helpme.page_Inscri4">
 
             <TextView
-                android:text="Choisir ville"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/textView"
-                android:textStyle="italic|bold"
-                android:layout_marginLeft="31dp"
-                android:layout_marginStart="31dp"
-                android:layout_marginBottom="25dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-            <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:text="Choisir ville"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="italic|bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
                 android:id="@+id/ville"
-                android:layout_below="@+id/textView"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="26dp" />
-            <TextView
-                android:text="Choisir le groupe sanguin "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:textStyle="italic|bold"
-                android:layout_marginLeft="31dp"
-                android:layout_marginStart="31dp"
-                android:layout_marginBottom="25dp"
-                android:layout_below="@id/ville"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginBottom="26dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ville"
+                android:layout_marginBottom="25dp"
+                android:text="Choisir le groupe sanguin "
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="italic|bold" />
+
+            <Spinner
                 android:id="@+id/groupe_sanguin"
-                android:layout_marginBottom="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/textView2"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp" />
+
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:ems="10"
                 android:id="@+id/t_email"
-                android:hint="Saisir votre E-mail"
-                android:layout_below="@id/groupe_sanguin"
-                android:layout_centerHorizontal="true" />
-            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Saisir votre mot de passe"
+                android:layout_below="@id/groupe_sanguin"
+                android:layout_centerHorizontal="true"
                 android:ems="10"
+                android:hint="Saisir votre E-mail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
                 android:id="@+id/t_pwd"
-                android:layout_marginBottom="13dp"
-                android:layout_below="@id/t_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/t_email"
-                android:layout_alignStart="@+id/t_email" />
+                android:layout_alignStart="@+id/t_email"
+                android:layout_below="@id/t_email"
+                android:layout_marginBottom="13dp"
+                android:ems="10"
+                android:hint="Saisir votre mot de passe"
+                android:inputType="textPassword" />
 
             <Button
-                android:text="Enregistrer"
+                android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/button"
-                android:layout_below="@id/t_pwd"
-                android:onClick="onCreate"
                 android:layout_alignParentBottom="true"
+                android:layout_below="@id/t_pwd"
+                android:layout_toEndOf="@+id/textView"
                 android:layout_toRightOf="@+id/textView"
-                android:layout_toEndOf="@+id/textView" />
+                android:onClick="onCreate"
+                android:text="Enregistrer" />
         </RelativeLayout>
     </android.support.v4.widget.NestedScrollView>
 </android.support.design.widget.CoordinatorLayout>

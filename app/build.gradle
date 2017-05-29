@@ -25,10 +25,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-<<<<<<< Updated upstream
     dependencies {
-        // other dependencies here
-
         compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
         // Optional, for RxJava2 adapter
         compile 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
@@ -39,20 +36,15 @@ dependencies {
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-=======
 
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
->>>>>>> Stashed changes
     compile 'com.google.firebase:firebase-core:10.2.1'
     compile 'com.google.firebase:firebase-messaging:10.2.1'
     compile 'com.google.android.gms:play-services-location:10.2.1'
     compile 'com.google.android.gms:play-services-places:10.2.1'
-<<<<<<< Updated upstream
     compile 'me.zhanghai.android.patternlock:library:2.1.2'
-=======
     compile 'com.android.support.constraint:constraint-layout:+'
->>>>>>> Stashed changes
     testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'
