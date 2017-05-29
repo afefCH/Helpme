@@ -86,7 +86,7 @@ public class Activity2 extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return null;
+            return "hi";
         }
     }
 }

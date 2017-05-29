@@ -6,11 +6,17 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    //google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur devices
-    <uses-feature android:name="android.hardware.fingerprint"
-        android:required="false"/>
-    <uses-permission
-        android:name="android.permission.USE_FINGERPRINT" />
+    //google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur
+    devices
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -29,27 +35,36 @@
         <activity android:name=".EmpreintActivity" />
         <activity android:name=".EmpreintActivity2" />
         <activity android:name=".Activity2" />
+        <activity android:name=".Activity3" />
         <activity android:name=".page_Inscr1" />
         <activity android:name=".page_inscri2" />
         <activity android:name=".page_Inscri3" />
         <activity android:name=".page_Inscri4" />
         <activity
             android:name=".page7_connexion"
-            android:label="@string/title_activity_page7_connexion"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+            android:label="@string/title_activity_page7_connexion" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <service android:name=".FirebaseIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activity_vid"></activity>
+        <activity android:name=".Activity_blessure" />
+        <activity android:name=".Activity_chaleur"></activity>
     </application>
 
 </manifest>

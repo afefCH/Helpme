@@ -335,7 +335,10 @@ public class page7_connexion extends AppCompatActivity implements LoaderCallback
             showProgress(false);
 
             if (success) {
-                finish();
+              //  finish();
+                Intent intent = new Intent(page7_connexion.this, Activity3.class);
+                startActivity(intent);
+
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();

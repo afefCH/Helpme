@@ -4,17 +4,28 @@ package com.example.latitude.helpme;
  * Created by Mariem on 4/25/2017.
  */
 
-public class adviceModle {
+public class adviceModle
+{
 
-    public adviceModle(int img_res, String title){
+    public adviceModle(int img_res, String title,String txt){
         this.setImg_res(img_res);
         this.setTitle(title);
+        this.setTxt(txt);
     }
 
 
 
     private int img_res;
     private String  title;
+    private String  txt;
+
+    public String getTxt() {
+        return txt;
+    }
+
+    public void setTxt(String txt) {
+        this.txt = txt;
+    }
 
     public int getImg_res() {
         return img_res;
@@ -32,4 +43,5 @@ public class adviceModle {
         this.title = title;
     }
 }
+
 

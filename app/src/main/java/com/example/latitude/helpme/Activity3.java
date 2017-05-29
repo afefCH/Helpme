@@ -17,6 +17,7 @@ public class Activity3 extends AppCompatActivity {
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
     String[] title;
+    String[] txt;
     int[] Img_res = {drawable.temp , R.drawable.bandaid , drawable.burn};
 
     ArrayList<adviceModle> arrayList =new ArrayList<adviceModle>();
@@ -27,15 +28,16 @@ public class Activity3 extends AppCompatActivity {
         recyclerView= (RecyclerView) findViewById(id.recycler_view);
 
         title= getResources().getStringArray(array.advice_names);
+        txt= getResources().getStringArray(array.advice_txt);
         int i=0;
         for(String name : title)
         {
-            adviceModle adviceModle=new adviceModle(Img_res[i],title[i]);
+            adviceModle adviceModle=new adviceModle(Img_res[i],title[i],txt[i]);
             arrayList.add(adviceModle);
             i++;
         }
 
-        adapter=new RecyclerAdapter(arrayList);
+        adapter=new RecyclerAdapter(arrayList,this);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

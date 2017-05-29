@@ -34,10 +34,33 @@
         Place your fingertip on the Home button to verify your identity
     </string>
     <string name="title_activity_maps">Map</string>
+
     <string-array name="advice_names">
-        <item>Brûlures</item>
         <item>Coup de chaleur </item>
         <item>Blessure</item>
+        <item>Brûlures</item>
+
+    </string-array>
+    <string-array name="advice_txt">
+
+        <item>
+            *La victime d’un épuisement provoqué par la chaleur, doit être installée dans un endroit frais.\n
+            *Étendez-la sur le sol et faites-la boire par petites gorgées toutes les deux ou trois minutes.\n
+            *Soyez particulièrement attentif aux signes de détérioration, mais sachez qu’il n’est pas expressément urgent de la conduire à l’hôpital dans le cas classique d’un épuisement provoqué par la chaleur.
+
+        </item>
+        <item>
+                 *Nettoyer\n
+                 *Détruire les germes\n
+                 *Protéger
+        </item>
+        <item>
+            *Refroidir une brûlure\n
+            *L’arrosage immédiat de la brûlure avec de l’eau\n
+            *Arrosez toutes les parties du corps qui ont été touchées\n
+            *L’eau va soulager immédiatement la douleur\n
+            *Si possible, enlevez les bagues, montres, bracelets,..
+        </item>
 
     </string-array>
 </resources>

@@ -31,7 +31,7 @@ public class Activity1 extends AppCompatActivity {
     }
 
     public void goToThePageLogin7(View view) {
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, page7_connexion.class);
         startActivity(intent);
     }
 
