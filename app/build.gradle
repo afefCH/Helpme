@@ -25,7 +25,13 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
+    dependencies {
+        // other dependencies here
 
+        compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
+        // Optional, for RxJava2 adapter
+        compile 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
+    }
 
 
     compile 'com.android.support:appcompat-v7:25.3.1'
@@ -36,6 +42,7 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:10.2.1'
     compile 'com.google.android.gms:play-services-location:10.2.1'
     compile 'com.google.android.gms:play-services-places:10.2.1'
+    compile 'me.zhanghai.android.patternlock:library:2.1.2'
     testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

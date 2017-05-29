@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':materiallockview'
+project(':materiallockview').projectDir = new File('app/MaterialPatternllockView-master/materiallockview')

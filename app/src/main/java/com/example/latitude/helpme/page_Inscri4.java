@@ -28,4 +28,10 @@ public class page_Inscri4 extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public  void goToTheSchema (View view){
+        Intent intent =new Intent(this,SchemaActivity.class);
+        startActivity(intent);
+
+
+    }
 }
