@@ -1,9 +1,12 @@
 package com.example.latitude.helpme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import static com.example.latitude.helpme.R.*;
@@ -42,5 +45,15 @@ public class Activity3 extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+        final Button loginButton = (Button) findViewById(id.buttonAct3);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Activity3.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
