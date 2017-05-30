@@ -24,12 +24,12 @@ public class page_Inscri4 extends AppCompatActivity {
     }
 
     public  void goToTheEmprint(View view){
-        Intent intent = new Intent(this, EmpreintActivity.class);
+        Intent intent = new Intent(getApplicationContext(), EmpreintActivity.class);
         startActivity(intent);
 
     }
     public  void goToTheSchema (View view){
-        Intent intent =new Intent(this,SchemaActivity.class);
+        Intent intent =new Intent(getApplicationContext(),SchemaActivity.class);
         startActivity(intent);
 
 

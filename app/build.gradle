@@ -25,13 +25,10 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    dependencies {
-        compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
-        // Optional, for RxJava2 adapter
-        compile 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
-    }
 
 
+    compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
+    compile 'com.andrognito.patternlockview:patternlockview-reactive:1.0.0'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'

@@ -47,7 +47,7 @@ public class EmpreintActivity extends AppCompatActivity {
         setContentView(R.layout.empreint);
 
         KeyguardManager keyguardManager = (KeyguardManager) getSystemService(KEYGUARD_SERVICE);
-        FingerprintManager fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
+/*       FingerprintManager fingerprintManager = (FingerprintManager) getSystemService(FINGERPRINT_SERVICE);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.USE_FINGERPRINT) != PackageManager.PERMISSION_GRANTED) {
 
@@ -152,6 +152,6 @@ public class EmpreintActivity extends AppCompatActivity {
         catch (InvalidAlgorithmParameterException e)
         {
             e.printStackTrace();
-        }
+        }*/
     }
 }

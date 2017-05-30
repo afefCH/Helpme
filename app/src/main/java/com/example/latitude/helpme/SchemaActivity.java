@@ -1,10 +1,14 @@
 package com.example.latitude.helpme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+
 import com.andrognito.patternlockview.PatternLockView;
 import com.andrognito.patternlockview.listener.PatternLockViewListener;
 import com.andrognito.patternlockview.utils.PatternLockUtils;
@@ -51,9 +55,18 @@ public class SchemaActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.shema);
+        final Button loginButton = (Button) findViewById(R.id.btn_terminer);
+        loginButton.setOnClickListener(new View.OnClickListener() {
 
-        mPatternLockView = (PatternLockView) findViewById(R.id.pattern_lock_view);
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SchemaActivity.this, Activity3.class);
+                startActivity(intent);
+            }
+        });
+
+     /*   mPatternLockView = (PatternLockView) findViewById(R.id.pattern_lock_view);
         mPatternLockView.setDotCount(3);
         mPatternLockView.setDotNormalSize((int) ResourceUtils.getDimensionInPx(this, R.dimen.pattern_lock_dot_size));
         mPatternLockView.setDotSelectedSize((int) ResourceUtils.getDimensionInPx(this, R.dimen.pattern_lock_dot_selected_size));
@@ -93,6 +106,6 @@ public class SchemaActivity extends AppCompatActivity {
                             Log.d(getClass().getName(), "Pattern has been cleared");
                         }
                     }
-                });
+                });*/
     }
 }
