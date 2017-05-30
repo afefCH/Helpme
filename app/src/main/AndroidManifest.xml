@@ -48,7 +48,8 @@
 
         <activity android:name=".ContactServiceUrgence">
         </activity>
-        <activity android:name=".UrgenceActivity"></activity>
+        <activity android:name=".UrgenceActivity"/>
+        <activity android:name=".CameraActivity"/>
 
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
