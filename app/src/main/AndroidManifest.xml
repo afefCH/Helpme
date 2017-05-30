@@ -6,9 +6,10 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    //google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur devices
+    <!--google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur devices-->
     <uses-feature android:name="android.hardware.fingerprint"
         android:required="false"/>
     <uses-permission
