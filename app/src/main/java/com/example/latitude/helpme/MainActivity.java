@@ -15,6 +15,22 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
 
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity1);
+        }
+        public void btnRegistration_Click(View v) {
+            Intent i = new Intent(MainActivity.this, RegistrationActivity.class);
+            startActivity(i);
+        }
+        public void btnLogin_Click(View v) {
+            Intent i = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(i);
+        }
+    }
+
+    /*
     // private SwipeGestureDetector gestureDetector;
     private static int SPLASH_TIME_OUT = 4000;
 
@@ -26,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent suivant = new Intent(MainActivity.this, Activity1.class);
+                Intent suivant = new Intent(MainActivity.this, SignupActivity.class);
                 startActivity(suivant);
                 finish();
             }
@@ -34,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         //instaciation swipe
         //gestureDetector = new SwipeGestureDetector(this);
 
-    }
+    }*/
 
     /*public boolean dispatchTouchEvent(MotionEvent event)
     {
@@ -61,5 +77,3 @@ public class MainActivity extends AppCompatActivity {
         }
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
     }*/
-
-}

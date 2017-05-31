@@ -23,7 +23,7 @@ public class Activity1 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity1.this, page_Inscr1.class);
+                Intent intent = new Intent(Activity1.this, Emergency_call.class);
                 startActivity(intent);
             }
         });

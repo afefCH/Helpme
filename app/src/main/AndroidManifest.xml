@@ -3,21 +3,21 @@
     package="com.example.latitude.helpme">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    //google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur
-    devices
-    <uses-feature
-        android:name="android.hardware.fingerprint"
-        android:required="false" />
-
-    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--google play exige les users pr l'importance du détecteur d'empreintes digitales ds leur devices-->
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="false"/>
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
 
     <application
         android:allowBackup="true"
@@ -32,12 +32,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".ServiceDetailActivity" />
+
+        <activity android:name=".SignupActivity" />
         <activity android:name=".Activity1" />
         <activity android:name=".EmpreintActivity" />
         <activity android:name=".EmpreintActivity2" />
-        <activity android:name=".SchemaActivity" />
         <activity android:name=".Activity2" />
-        <activity android:name=".Activity3" />
         <activity android:name=".page_Inscr1" />
         <activity android:name=".page_inscri2" />
         <activity android:name=".page_Inscri3" />

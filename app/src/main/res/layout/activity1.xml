@@ -19,18 +19,18 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
         android:layout_marginEnd="30dp"
-        android:id="@+id/connexion"
+        android:id="@+id/btnLogin"
         android:layout_alignBaseline="@+id/inscription"
         android:layout_alignBottom="@+id/inscription"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="goToThePageLogin7"/>
+        android:onClick="btnLogin_Click" />
 
     <Button
         android:text="inscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCreate"
+        android:onClick="btnRegistration_Click"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
         android:layout_marginBottom="58dp"
